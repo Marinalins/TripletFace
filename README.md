@@ -94,6 +94,7 @@ The students are asked to complete the following tasks:
 ## My work
 
 You can check the file ia.pynb.
+I couldn't upload the model.pt from trainings because it was too heavy.
 
 First, I trained the model using the original script provided.
 I've obtained these plots after ten epochs:
@@ -130,7 +131,7 @@ I've obtained these plots after ten epochs:
 
 Then, to improve the model, I decided to use a newer version of Resnet.
 According to this [link](https://pytorch.org/docs/stable/torchvision/models.html), there are several version of Resnet which are more effective than Resnet18. So I chose to change the model to a Resnet152. I thought it would provide higher performance and reduce the error.
-The only drawback of this version is that it is way heavier than Resnet18, so the training takes more time.
+The only drawback of this version is that it is way heavier than Resnet18 (224Mo), so the training takes more time.
 I've obtained a train_loss=0.000286 and these plots after three epochs:
 
 ### Epoch 1:
