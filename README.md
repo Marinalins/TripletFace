@@ -90,3 +90,54 @@ The students are asked to complete the following tasks:
 * Add inference script in order to use the final model
 * Change README.md in order to include the student choices explained and a table containing the Centroids and Thesholds for each student of the dataset with a vizualisation ( See the one above )
 * Send the github link by mail
+
+## My work
+
+You can check the file ia.pynb.
+
+First, I trained the model using the original script provided.
+I've obtained these plots after ten epochs:
+
+### Epoch 1:
+![vizualisation_0](tripletface/model/vizualisation_0.png)
+
+### Epoch 2:
+![vizualisation_1](tripletface/model/vizualisation_1.png)
+
+### Epoch 3:
+![vizualisation_2](tripletface/model/vizualisation_2.png)
+
+### Epoch 4:
+![vizualisation_3](tripletface/model/vizualisation_3.png)
+
+### Epoch 5:
+![vizualisation_4](tripletface/model/vizualisation_4.png)
+
+### Epoch 6:
+![vizualisation_5](tripletface/model/vizualisation_5.png)
+
+### Epoch 7:
+![vizualisation_6](tripletface/model/vizualisation_6.png)
+
+### Epoch 8:
+![vizualisation_7](tripletface/model/vizualisation_7.png)
+
+### Epoch 9:
+![vizualisation_8](tripletface/model/vizualisation_8.png)
+
+### Epoch 10:
+![vizualisation_9](tripletface/model/vizualisation_9.png)
+
+Then, to improve the model, I decided to use a newer version of Resnet.
+According to this [link](https://pytorch.org/docs/stable/torchvision/models.html), there are several version of Resnet which are more effective than Resnet18. So I chose to change the model to a Resnet152. I thought it would provide higher performance and reduce the error.
+The only drawback of this version is that it is way heavier than Resnet18, so the training takes more time.
+I've obtained a train_loss=0.000286 and these plots after three epochs:
+
+### Epoch 1:
+![vizualisation_0](tripletface/model2/vizualisation_0.png)
+
+### Epoch 2:
+![vizualisation_1](tripletface/model2/vizualisation_1.png)
+
+### Epoch 3:
+![vizualisation_2](tripletface/model2/vizualisation_2.png)
